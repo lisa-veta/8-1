@@ -23,10 +23,13 @@
         p:greeting="${greeting}">
         <constructor-arg index="0" value="${id}" />
         <constructor-arg value="${name}" />
+        <constructor-arg value="${city}" />
     </bean>
 
     <util:map id="loggerMap">
+        <entry key="DEBUG" value-ref="combinedEventLogger" />
         <entry key="INFO" value-ref="consoleEventLogger" />
+        <entry key="WARNING" value-ref="combinedEventLogger" />
         <entry key="ERROR" value-ref="combinedEventLogger" />
     </util:map>
 

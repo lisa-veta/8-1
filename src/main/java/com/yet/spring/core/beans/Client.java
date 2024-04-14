@@ -7,11 +7,13 @@ public class Client {
     private String fullName;
     
     private String greeting;
+    private String city;
 
-    public Client(String id, String fullName) {
+    public Client(String id, String fullName, String city) {
         super();
         this.id = id;
         this.fullName = fullName;
+        this.city = city;
     }
 
     public String getId() {
@@ -38,4 +40,11 @@ public class Client {
         this.greeting = greeting;
     }
 
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
 }

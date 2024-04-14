@@ -26,7 +26,7 @@ public class TestApp {
 
     @Test
     public void testClientNameSubstitution() throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
-        Client client = new Client("25", "Bob");
+        Client client = new Client("25", "Bob", "cc");
         DummyLogger dummyLogger = new DummyLogger();
         
         App app = new App(client, dummyLogger, Collections.emptyMap());
